@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Victory Onorhime Portfolio</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href= {{ asset('assets/css/bootstrap.css') }} />
+        <link rel="stylesheet" href={{ asset("assets/css/animate.css") }} />
+        <link rel="stylesheet" href={{ asset("assets/css/stroke-gap-icons.css") }} />
+        <link rel="stylesheet" href={{ asset("assets/css/icofont.css") }} />
+        <link rel="stylesheet" href={{ asset("assets/css/flaticon.css") }} />
+        <link rel="stylesheet" href={{ asset("assets/css/Interest.css") }}>
+        <link rel="stylesheet" href={{ asset("assets/css/owl.carousel.min.css") }}>
+        <link rel="stylesheet" href={{ asset("assets/css/owl.theme.default.min.css") }}>
+        <link rel="stylesheet" href={{ asset("assets/css/lightslider.css") }}>
+        <link rel="stylesheet" href={{ asset("assets/css/jquery.mCustomScrollbar.css") }}>
+        <link rel="stylesheet" href={{ asset("assets/css/preset.css") }} />
+        <link rel="stylesheet" href={{ asset("assets/css/ignore_for_wp.css") }} />
+        <link rel="stylesheet" href={{ asset("assets/css/theme.css") }} />
+        <link rel="stylesheet" href={{ asset("assets/css/responsive.css") }} />
+        <link rel="stylesheet" href={{ asset("assets/css/light.css") }} />
+
+
+        <link rel="icon" type="image/png" href={{ asset("assets/images/favicon.png") }}>
+        {% block customStylesheets %}
+        {% endblock %}
+
+        {% block customJavascripts %}
+        {% endblock %}
+    </head>
+    <body class="dark">
+        {% block loader %}
+            <div class="preloader">
+            <div class="preloader-inner">
+            <div class="preloader-box">
+            <div class="letter">V</div>
+            <div class="letter">I</div>
+            <div class="letter">C</div>
+            <div class="letter">T</div>
+            <div class="letter">O</div>
+            <div class="letter">R</div>
+            <div class="letter">Y</div>
+            </div>
+            </div>
+            </div>
+        {% endblock %}
+
+        <div class="container">
+        <div class="row">
+        <!-- Sidebar -->
+        {% block mainbar %}
+            <div class="col-lg-4 profileColumn">
+            <div class="profileSidebar">
+            <div class="psHeader">
+            <svg preserveaspectratio="none" viewbox="0 0 100 100">
+            <polygon points="0 20, 100 20, 0 100" opacity=".65"></polygon>
+            </svg>
+            <svg class="svg2" preserveaspectratio="none" viewbox="0 0 100 120">
+            <polygon points="0 20, 100 20, 15 120" opacity=".8"></polygon>
+            </svg>
+            <div class="psContent">
+            <h3>Linda M. Bellamy</h3>
+            <span>Sr. Developer</span>
+            </div>
+            </div>
+            <div class="psPhoto">
+            <img src="assets/images/home_01/1.jpg" alt />
+            <div class="psSocial">
+            <a href="https://facebook.com" target="_blank" class="fac"><i class="icofont-facebook"></i></a>
+            <a href="https://twitter.com" target="_blank" class="twi"><i class="icofont-twitter"></i></a>
+            <a href="https://dribbble.com/" target="_blank" class="dri"><i class="icofont-dribbble"></i></a>
+            <a href="https://www.instagram.com/" target="_blank" class="ins"><i class="icofont-instagram"></i></a>
+            </div>
+            </div>
+            <div class="psSkills">
+            <div class="pssBox" data-count="85">
+            <div class="pssbCount">85.</div>
+            <h5>Backend Development</h5>
+            <div class="pssbBars"><div class="pssbBar" style="width: 0%;"></div></div>
+            </div>
+            <div class="pssBox" data-count="92">
+            <div class="pssbCount">92.</div>
+            <h5>Frontend Development</h5>
+            <div class="pssbBars"><div class="pssbBar gr2" style="width: 0%;"></div></div>
+            </div>
+            <div class="pssBox" data-count="71">
+            <div class="pssbCount">71.</div>
+            <h5>Illustration</h5>
+            <div class="pssbBars"><div class="pssbBar gr3" style="width: 0%;"></div></div>
+            </div>
+            </div>
+            <div class="psFooter">
+            <a href="javascript:void(0);" class="btt_btn only_icon btt_reverse"><span><i class="icon icon-DownloadCloud"></i></span></a>
+            <a href="contact.html" class="btt_btn"><span><i class="icon icon-Bag"></i> Hire Me</span></a>
+            </div>
+            </div>
+            </div>
+            
+        {% endblock %}
+        <div class="col-lg-8 contentColumn">
+
+        {{ include('_menu.html.twig') }}
+
+        {% block sidebar %}
+            {% include '_sidebar.html.twig' %}
+        {% endblock %}
+        {% block main %}
+
+            
+        {% endblock %}
+        </div>
+        </div>
+        </div>
+        <a href="javascript:void(0);" id="backtotop"><i class="icofont-bubble-up"></i></a>
+
+
+        <script data-cfasync="false" src="../../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="assets/js/jquery.js"></script>
+        <script src={{ asset("assets/js/bootstrap.min.js") }}></script>
+        <script src={{ asset("assets/js/jquery.appear.js") }}></script>
+        <script src={{ asset("assets/js/owl.carousel.min.js") }}></script>
+        <script src={{ asset("assets/js/mixer.js") }}></script>
+        <script src={{ asset("assets/js/lightslider.min.js") }}></script>
+        <script src="https://maps.google.com/maps/api/js?key=AIzaSyBJtPMZ_LWZKuHTLq5o08KSncQufIhPU3o"></script>
+        <script src={{ asset("assets/js/gmaps.js") }}></script>
+        <script src={{ asset("assets/js/anime.min.js") }}></script>
+        <script src={{ asset("assets/js/folio.js") }}></script>
+        <script src={{ asset("assets/js/jquery.mCustomScrollbar.concat.min.js") }}></script>
+        <script src={{ asset("assets/js/theme.js") }}></script>
+    </body>
+</html>

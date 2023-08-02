@@ -1,0 +1,80 @@
+{% extends 'base.html.twig' %}
+
+{% block main %}
+    <div class="bodyContent">
+<div class="pageCointainer">
+<section class="comonSection mapSection mb30">
+<div class="map">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d837.1682202687648!2d90.37416162759105!3d23.756162001006555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755bff7abdea3e3%3A0x7b0e9f046b651f49!2sBanee&#39;s%20Academy!5e0!3m2!1sen!2sbd!4v1665464458907!5m2!1sen!2sbd"></iframe>
+</div>
+</section>
+<section class="comonSection contactSection">
+<div class="container-fluid">
+<div class="row">
+<div class="col-lg-12">
+<h2 class="sectionTitle">Contact Me</h2>
+</div>
+</div>
+<div class="row mb30">
+<div class="col-lg-8">
+<div class="contact_form">
+<form method="post" action="contact.html#" id="contactForm">
+<div class="row">
+<div class="col-lg-6">
+<input type="text" class="required" name="full_name" placeholder="Full Name *" />
+</div>
+<div class="col-lg-6">
+<input type="text" class="required" name="email" placeholder="Email *" />
+</div>
+<div class="col-lg-6">
+<input type="text" name="phone" placeholder="Phone" />
+</div>
+<div class="col-lg-6">
+<input type="text" class="required" name="sjubject" placeholder="Subject *" />
+</div>
+<div class="col-lg-12">
+<textarea name="message" class="required" placeholder="Message *"></textarea>
+</div>
+<div class="col-lg-12">
+<button type="submit" class="btt_btn"><span><i class="icon icon-Mail"></i>Send Message</span></button>
+</div>
+</div>
+</form>
+</div>
+</div>
+<div class="col-lg-4">
+<div class="icon_box_01">
+<i class="icon icon-Mail"></i>
+<h3>Email Address</h3>
+<p><a href="https://themewar.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="23480d4e464f4a505042634042514c4f4f0d4e46">[email&#160;protected]</a></p>
+</div>
+<div class="icon_box_01">
+<i class="icon icon-Phone"></i>
+<h3>Phone Number</h3>
+<p>1.800.987.6987</p>
+</div>
+<div class="icon_box_01 addrBox">
+<i class="icon icon-Pointer"></i>
+<h3>Address</h3>
+<p>
+189 Lodge Avenue,
+Dagenham, RM8 2HQ,
+United Kingdom
+</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<footer class="footer">
+<div class="container-fluid">
+<div class="row">
+<div class="col-lg-12 text-center">
+<div class="copyRight">&copy; 2021 All Rights Reserved By <a href="https://themewar.com" target="_blank">ThemeWar</a></div>
+</div>
+</div>
+</div>
+</footer>
+</div>
+</div>
+{% endblock %}
